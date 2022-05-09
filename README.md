@@ -4,8 +4,10 @@ Download Tube downloads YouTube Videos for free. This Web App uses YouTube API t
 You can try it [here](http://download-tube.herokuapp.com/)
 
 # Technologies Used
+* Python
 * Django
 * Pytube
+* Bootstrap
 
 # Usage 
 Create your Youtube Key [here](https://developers.google.com/youtube/v3/getting-started)
