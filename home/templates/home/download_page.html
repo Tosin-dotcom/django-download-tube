@@ -1,0 +1,23 @@
+{% extends "home/index.html" %}
+
+{% block title %}Download{% endblock %}
+
+    <h1>Search</h1>
+
+    <form action="POST"> 
+        <label for="res">Choose a resolution:</label>
+
+        <select id="res" name="App">
+
+            {% for r in res %}
+                <option value="{{ r }}">{{ r }}</option>
+            {% endfor %}
+
+        </select>
+        <input type="submit" value="Search">
+    </form>
+
+
+{% block content %}
+
+{% endblock %}

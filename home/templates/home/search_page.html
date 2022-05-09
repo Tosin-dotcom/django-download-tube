@@ -1,0 +1,35 @@
+{% extends "home/index.html" %}
+
+{% block title %}
+    <title>Download</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+    <form method="POST"> 
+        {% csrf_token %}
+        <label for="res">Choose a resolution:</label>
+
+        <select id="res" name="App">
+
+            <optgroup label="Video">
+                {% for r,v in v2.items %}
+                    <option value="{{ r }}">{{ r }}  -  {{ v }}</option>
+                {% endfor %}
+            </optgroup>
+
+            <optgroup label="Audio">
+               {% for r,a in a2.items %}
+                    <option value="{{ r }}">{{ r }}  -  {{ a }}</option>
+                {% endfor %}
+            </optgroup>
+
+        </select>
+
+        <input type="submit" value="Download">
+    </form>
+
+
+{% endblock %}
