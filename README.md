@@ -1,7 +1,7 @@
 # django-download-tube
 Download Tube downloads YouTube Videos for free. This Web App uses YouTube API to fetch data based on user input and renders available resolution in both audio and video format.
 
-You can try it [here](http://download-tube.herokuapp.com/)
+You can try it [here](https://download-tube-1.herokuapp.com/)
 
 # Technologies Used
 * Python
